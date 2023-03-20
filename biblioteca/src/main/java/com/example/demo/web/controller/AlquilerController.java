@@ -29,6 +29,9 @@ public class AlquilerController {
 	@Autowired
 	private AlquilerService alquilerService;
 
+	@Autowired
+	private EmailSenderService senderService;
+	
 	// Listar los alquileres
 	@GetMapping("/usuario/{idUsuario}/adminAlquiler")
 	public ModelAndView findAllByUsuario(@PathVariable Long idUsuario) {
@@ -102,6 +105,9 @@ public class AlquilerController {
 		
 		
 		
+		senderService.sendSimpleEmail("toemail@gmail.com",
+				"This is email body",
+				"This is email subject");
 		
 		ModelAndView mav = new ModelAndView("confirmacion");
 		
