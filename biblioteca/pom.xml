@@ -46,6 +46,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>com.memetix</groupId>
+    <artifactId>google-translate-api</artifactId>
+    <version>0.3.7</version>
+</dependency>
+
 	</dependencies>
 
 	<build>
