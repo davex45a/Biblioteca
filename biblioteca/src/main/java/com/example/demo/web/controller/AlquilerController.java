@@ -105,7 +105,7 @@ public class AlquilerController {
 		
 		
 		
-		senderService.sendSimpleEmail("toemail@gmail.com",
+		senderService.sendSimpleEmail("david.martinez.bosch45@gmail.com"/*usuarioDTO.email*/,//Poner email del usuario al que se le envia
 				"This is email body",
 				"This is email subject");
 		
